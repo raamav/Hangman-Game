@@ -10,17 +10,11 @@ Created on Wed Feb  20 12:53:18 2019
 
 
 # Hangman game
-#
 
-# -----------------------------------
-# Helper code
-# You don't need to understand this helper code,
-# but you will have to know how to use the functions
-# (so be sure to read the docstrings!)
 
-import random
+import random # a library that helps with random number generation. This is used to selet a random word from the list
 
-WORDLIST_FILENAME = "/users/ramavishwanathan/Desktop/Rama files/purse/Python programming/words.txt"
+WORDLIST_FILENAME = "/users.../Python programming/words.txt" #list of 
 
 def loadWords():
     """
@@ -53,6 +47,7 @@ def chooseWord(wordlist):
 # Load the list of words into the variable wordlist
 # so that it can be accessed from anywhere in the program
 wordlist = loadWords()
+
 
 def isWordGuessed(secretWord, lettersGuessed):
     '''
